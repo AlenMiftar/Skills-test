@@ -93,12 +93,12 @@ header {
 
 .scroll-nav {
   display: flex;
-  width: 108px;
+  width: 128px;
   height: 46px;
   margin: auto;
-
   & ul {
     list-style: none;
+    margin: auto;
   }
 
   & a {
@@ -119,5 +119,82 @@ header {
   & span {
     display: flex;
     align-self: center;
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1770px;
+  width: 100%;
+  min-height: 80px;
+  background-color: #5474fd;
+  overflow: hidden;
+
+  & h2 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    margin-left: 30px;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    max-width: 525px;
+    min-height: 12px;
+    width: 100%;
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Aleo", serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+
+  & a.icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav li:not(:last-child) {
+    display: none;
+  }
+  .main-nav a.icon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav.responsive {
+    position: relative;
+  }
+
+  .main-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive li {
+    display: block;
+    text-align: left;
   }
 }
