@@ -9,6 +9,7 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   background-image: url(../images/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@ header {
     width: 100%;
     min-height: 76px;
     margin: auto;
+    margin-bottom: 48px;
 
     & h1 {
       color: #fff;
@@ -45,5 +47,46 @@ header {
       text-align: center;
       margin: auto;
     }
+  }
+}
+
+.form-conteiner {
+  display: flex;
+  justify-content: center;
+  max-width: 653px;
+  width: 100%;
+  min-height: 63px;
+  margin: auto;
+  margin-top: 48px;
+
+  & input {
+    max-width: 500px;
+    width: 100%;
+    min-height: 60px;
+    color: #999999;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-align: center;
+    border: none;
+  }
+
+  & button {
+    background-color: #5474fd;
+    width: 150px;
+    height: 63px;
+    color: #fff;
+    font-family: "Aleo", serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
   }
 }
