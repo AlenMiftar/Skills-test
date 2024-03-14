@@ -19,12 +19,14 @@ header {
   background-repeat: no-repeat;
   max-width: 1773px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 821px;
 }
 header .header-title-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -42,7 +44,8 @@ header .header-title-box h1 {
   line-height: 26px;
   letter-spacing: 4.8px;
   text-align: center;
-  margin: auto;
+  margin-top: 100px;
+  margin-bottom: -10px;
 }
 header .header-title-box p {
   color: #fff;
@@ -52,7 +55,7 @@ header .header-title-box p {
   line-height: 26px;
   letter-spacing: 6.82px;
   text-align: center;
-  margin: auto;
+  margin-bottom: 100px;
 }
 
 .form-conteiner {
@@ -79,6 +82,7 @@ header .header-title-box p {
   letter-spacing: 2.8px;
   text-align: center;
   border: none;
+  margin-left: 10px;
 }
 .form-conteiner button {
   background-color: #5474fd;
@@ -95,9 +99,20 @@ header .header-title-box p {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
+  margin-right: 10px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.search-btn:hover.search-btn:focus {
+  background-color: aquamarine;
 }
 
 .scroll-nav {
+  position: relative;
+  right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,9 +120,9 @@ header .header-title-box p {
   height: 46px;
   margin: auto;
 }
-.scroll-nav ul {
+.scroll-nav .scroll-nav ul {
   list-style: none;
-  margin: auto;
+  margin-bottom: 100px;
 }
 .scroll-nav a {
   display: -webkit-box;
@@ -127,6 +142,12 @@ header .header-title-box p {
   line-height: 26px;
   letter-spacing: 2.8px;
   text-align: center;
+}
+.scroll-nav a:hover {
+  color: coral;
+}
+.scroll-nav a:focus {
+  color: #5474fd;
 }
 .scroll-nav span {
   display: -webkit-box;
@@ -154,11 +175,13 @@ header .header-title-box p {
   min-height: 80px;
   background-color: #5474fd;
   overflow: hidden;
+  margin-top: 100px;
 }
 .main-nav h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -168,7 +191,11 @@ header .header-title-box p {
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2.4px;
-  margin-left: 30px;
+  margin-left: 10px;
+}
+.main-nav h2:hover {
+  cursor: pointer;
+  color: aquamarine;
 }
 .main-nav ul {
   display: -webkit-box;
@@ -201,6 +228,13 @@ header .header-title-box p {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0px;
+}
+.main-nav a:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+.main-nav a:hover {
+  color: aquamarine;
 }
 .main-nav a.icon {
   display: none;
