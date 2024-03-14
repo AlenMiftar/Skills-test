@@ -15,6 +15,7 @@ header {
   background-repeat: no-repeat;
   max-width: 1773px;
   width: 100%;
+  // min-height: 821px;
   min-height: 100vh;
 
   & .header-title-box {
@@ -24,7 +25,6 @@ header {
     width: 100%;
     min-height: 76px;
     margin: auto;
-    margin-bottom: 48px;
 
     & h1 {
       color: #fff;
@@ -57,7 +57,6 @@ header {
   width: 100%;
   min-height: 63px;
   margin: auto;
-  margin-top: 48px;
 
   & input {
     max-width: 500px;
@@ -75,6 +74,7 @@ header {
 
   & button {
     background-color: #5474fd;
+
     width: 150px;
     height: 63px;
     color: #fff;
@@ -88,5 +88,36 @@ header {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     border-right: 1px solid white;
+  }
+}
+
+.scroll-nav {
+  display: flex;
+  width: 108px;
+  height: 46px;
+  margin: auto;
+
+  & ul {
+    list-style: none;
+  }
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    width: 123px;
+    height: 26px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    text-align: center;
+  }
+
+  & span {
+    display: flex;
+    align-self: center;
   }
 }
