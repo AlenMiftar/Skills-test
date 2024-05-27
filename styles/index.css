@@ -102,7 +102,7 @@ header {
   background-repeat: no-repeat;
   max-width: 1773px;
   width: 100%;
-  min-height: 821px;
+  min-height: 100vh;
 }
 header .header-title-box {
   display: -webkit-box;
@@ -203,7 +203,7 @@ header .header-title-box p {
   height: 46px;
   margin: auto;
 }
-.scroll-nav .scroll-nav ul {
+.scroll-nav ul {
   list-style: none;
   margin-bottom: 100px;
 }
