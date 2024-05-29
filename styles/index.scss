@@ -23,11 +23,9 @@ main {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  // overflow-x: hidden;
 }
 
 .header {
-  // margin: auto;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
@@ -88,7 +86,6 @@ main {
   & .searchbar-text {
     display: flex;
     outline: none;
-    // position: relative;
     max-width: 500px;
     width: 100%;
     height: 61px;
@@ -104,7 +101,6 @@ main {
 
   & .search-btn {
     background-color: #5474fd;
-    // position: relative;
     width: 150px;
     height: 63px;
     color: #fff;
@@ -178,7 +174,6 @@ main {
   width: 100%;
   min-height: 80px;
   background-color: #5474fd;
-  // overflow: hidden;
   margin-top: 100px;
 
   & h2 {
@@ -237,10 +232,10 @@ main {
   }
 }
 
-.icon.li {
+.icon-li {
   width: 100%;
   display: flex;
-  justify-content: flex-start; // ingen funktion?
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 600px) {
@@ -249,10 +244,20 @@ main {
   }
   .main-nav a.icon {
     display: flex;
+    position: relative;
+    bottom: 60px;
+    left: 25px;
   }
   .form {
-    padding: 25px;
-    width: 80%;
+    width: 98%;
+    flex-wrap: wrap;
+
+    & .search-btn {
+      margin-top: 20px;
+    }
+  }
+  .scroll-container {
+    margin-left: 12px;
   }
 }
 
@@ -267,6 +272,6 @@ main {
   .main-nav.responsive li {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
