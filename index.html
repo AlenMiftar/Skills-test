@@ -17,21 +17,24 @@
     <title>BHROMAON</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-title-box">
         <h1>BHROMAON</h1>
-        <p>Safe Travel Anywhere</p>
+        <h2>Safe Travel Anywhere</h2>
       </div>
-      <form class="form-conteiner">
+      <form class="form">
         <input
+          class="searchbar-text"
           type="text"
           placeholder="Search Your Travel Destination"
+          minlength="1"
           required
         />
         <button class="search-btn" type="submit">
           SEARCH <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </button>
       </form>
+
       <nav class="scroll-nav">
         <ul>
           <li>
@@ -66,29 +69,39 @@
         }
       </script>
     </header>
-    <section class="choose-section" id="why-choose-us">
-      <div class="choose-text-box">
-        <h1>Why Choose Us</h1>
-        <p>
-          Tion and dislike men who are so beguiled and demoralized by desire by
-          the charms of pleasure of the moment, so blinded by desire, that they
-          cannot foresee Ddislike men who are so beguiled and demoralized by the
-          charms of pleasure of the moment, so blinded by desire, that.
-        </p>
-        <button type="button">Explore Places</button>
-      </div>
-      <div class="image-box">
+    <main>
+      <section class="choose-section" id="why-choose-us">
+        <div class="choose-text-box">
+          <h1>Why Choose Us</h1>
+          <p>
+            Tion and dislike men who are so beguiled and demoralized by desire
+            by the charms of pleasure of the moment, so blinded by desire, that
+            they cannot foresee <br /><br />
+            Dislike men who are so beguiled and demoralized by the charms of
+            pleasure of the moment, so blinded by desire, that.
+          </p>
+          <button type="button">Explore Places</button>
+        </div>
+        <div class="image-box">
+          <img
+            class="first-image"
+            src="images/stone-house-image.png"
+            alt="A stone house beside open water"
+          />
+          <img
+            class="second-image"
+            src="images/woman-view-image.png"
+            alt="A woman views the mountains"
+          />
+        </div>
+      </section>
+      <section class="choose-how-section">
         <img
-          class="first-image"
-          src="images/stone-house-image.png"
-          alt="A stone house beside open water"
+          class="how-image"
+          src="images/How It Works.png"
+          alt="How it works"
         />
-        <img
-          class="second-image"
-          src="images/woman-view-image.png"
-          alt="A woman views the mountains"
-        />
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

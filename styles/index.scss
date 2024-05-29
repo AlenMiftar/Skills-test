@@ -1,22 +1,40 @@
 @use "choose";
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-body {
-  max-width: 1800px;
-  width: 100%;
-  min-height: 100vh;
-  margin: auto;
+html {
+  padding: 1rem;
 }
 
-header {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.header {
+  // margin: auto;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-image: url(../images/header-bg.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  max-width: 1800px;
+  max-width: 1773px;
   width: 100%;
-  // min-height: 821px;
   min-height: 100vh;
 
   & .header-title-box {
@@ -41,7 +59,7 @@ header {
       margin-bottom: -10px;
     }
 
-    & p {
+    & h2 {
       color: #fff;
       font-family: "Josefin Sans", sans-serif;
       font-size: 22px;
@@ -54,18 +72,23 @@ header {
   }
 }
 
-.form-conteiner {
+.form {
   display: flex;
   justify-content: center;
-  max-width: 653px;
+  position: relative;
+  max-width: 550px;
   width: 100%;
   min-height: 63px;
   margin: auto;
+  margin-bottom: 80px;
 
-  & input {
+  & .searchbar-text {
+    display: flex;
+    outline: none;
+    // position: relative;
     max-width: 500px;
     width: 100%;
-    min-height: 60px;
+    height: 61px;
     color: #999999;
     font-family: "Josefin Sans", sans-serif;
     font-size: 14px;
@@ -74,12 +97,11 @@ header {
     letter-spacing: 2.8px;
     text-align: center;
     border: none;
-    margin-left: 10px;
   }
 
-  & button {
+  & .search-btn {
     background-color: #5474fd;
-
+    // position: relative;
     width: 150px;
     height: 63px;
     color: #fff;
@@ -88,18 +110,14 @@ header {
     line-height: 26px;
     letter-spacing: 1.4px;
     text-align: center;
-    margin: auto;
     border: none;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    margin-right: 10px;
+    border: 2px solid #fff;
   }
 }
 
 .search-btn:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(102, 71, 223);
 
   &.search-btn:focus {
     background-color: aquamarine;
@@ -138,7 +156,7 @@ header {
     }
 
     &:focus {
-      color: #5474fd;
+      color: aqua;
     }
   }
 
@@ -157,7 +175,7 @@ header {
   width: 100%;
   min-height: 80px;
   background-color: #5474fd;
-  overflow: hidden;
+  // overflow: hidden;
   margin-top: 100px;
 
   & h2 {
@@ -221,6 +239,13 @@ header {
   }
   .main-nav a.icon {
     display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    // position: relative;
+  }
+  .form {
+    padding: 25px;
+    width: 80%;
   }
 }
 
