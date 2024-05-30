@@ -1,9 +1,11 @@
 @use "choose";
 @use "travel";
+@use "testimonial";
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 html {
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +17,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 main {

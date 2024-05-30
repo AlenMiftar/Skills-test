@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 1773px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 685px;
   background-image: url(../images/why-choose-us-bg.png);
   background-size: cover;
   background-position: center;
@@ -23,7 +23,6 @@
       font-family: "Aleo", serif;
       font-size: 36px;
       line-height: 26px;
-      letter-spacing: 0px;
     }
 
     & p {
@@ -88,6 +87,7 @@
   align-items: center;
   max-width: 1773px;
   width: 100%;
+  min-height: 137px;
   background-color: #333;
 
   & .how-image {
