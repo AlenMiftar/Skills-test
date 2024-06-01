@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url(../images/header-bg.png);
   background-size: cover;
   background-position: center;
@@ -13,15 +14,23 @@
 
   & .header-title-box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    // margin-left: 20px;
+    // margin-right: 20px;
     position: relative;
     top: 100px;
-    flex-direction: column;
     max-width: 372px;
     width: 100%;
     min-height: 76px;
-    margin: auto;
 
     & h1 {
+      max-width: 342px;
+      width: 100%;
+      min-height: 26px;
       color: #fff;
       font-family: "Josefin Sans", sans-serif;
       font-size: 48px;
@@ -34,6 +43,9 @@
     }
 
     & h2 {
+      // max-width: 345px;
+      width: 100%;
+      min-height: 26px;
       color: #fff;
       font-family: "Josefin Sans", sans-serif;
       font-size: 22px;
