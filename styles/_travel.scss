@@ -1,7 +1,7 @@
 .travel-top {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   max-width: 1773px;
   width: 100%;
@@ -9,14 +9,16 @@
   background-image: url(../images/house-pool-bg.png);
   background-size: cover;
   background-position: center;
+
+  & .top {
+    margin-left: 100px;
+  }
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  margin-right: 50px;
-  margin-left: 10px;
   padding-left: 25px;
   flex-direction: column;
   background-color: rgba(35, 35, 35, 0.9);
@@ -75,14 +77,10 @@
   }
 }
 
-.emty {
-  display: none;
-}
-
 .travel-bottom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 1773px;
   width: 100%;
@@ -90,13 +88,18 @@
   background-image: url(../images/ocean-rocks-bg.png);
   background-size: cover;
   background-position: center;
+
+  & .bottom {
+    margin-right: 100px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .card-container {
-    margin: auto;
-    width: 80%;
+    width: 100%;
     padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
   .book-btn {
     margin: auto;

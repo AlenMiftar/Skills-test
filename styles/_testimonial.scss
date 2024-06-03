@@ -20,7 +20,7 @@
   width: 100%;
   min-height: 26px;
 
-  & h1 {
+  & h2 {
     color: #fff;
     font-family: "Aleo", serif;
     font-size: 36px;
@@ -52,7 +52,7 @@
   margin-top: -5px;
   margin-right: 20px;
 
-  & h2 {
+  & h3 {
     color: #fff;
     font-family: "Josefin Sans", sans-serif;
     font-size: 28px;
@@ -126,13 +126,11 @@
     flex-direction: column;
     & .img-box {
       width: 90%;
-      // margin: auto;
       margin-top: -100px;
     }
     & .txt-box {
       margin: auto;
       width: 90%;
-      // padding: 10px;
       margin-bottom: 50px;
     }
     & .img {
