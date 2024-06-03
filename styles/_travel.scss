@@ -94,14 +94,28 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
+  .top {
+    position: relative;
+    right: 50px;
+  }
+  .bottom {
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .card-container {
-    width: 100%;
     padding: 10px;
-    margin-right: 100px;
-    margin-left: 100px;
   }
   .book-btn {
+    margin: auto;
+  }
+  .top {
+    margin: auto;
+  }
+  .bottom {
     margin: auto;
   }
 }
