@@ -249,7 +249,14 @@
     flex-wrap: wrap;
     margin-right: 10px;
   }
-  // .header-title-box {
-  //   width: 95%; // jag vill få titeln Bhromaon att bli responsive men har inte lyckats
-  // }
+}
+
+@media screen and (max-width: 350px) {
+  .header-title-box h1 {
+    font-size: 20px;
+    width: 98%;
+    //  {
+    //   width: 95%; // jag vill få titeln Bhromaon att bli responsive men har inte lyckats
+    // }
+  }
 }
